@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sulten</title>
-    <script>
-
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -13,31 +11,31 @@
 <table>
     <tr>
         <td>Navn</td>
-        <td><input type="text" id="navn"/>
+        <td><input type="text" id="navn" onchange="valideringNavn()"/>
             <span id="feilNavn" style="color: red"></span></td>
     </tr>
     <tr>
         <td>Mobil</td>
-        <td><input type="number" id="mobil"/>
+        <td><input type="text" id="mobil" onchange="valideringMobil()"/>
             <span id="feilMobil" style="color: red"></span></td>
     </tr>
     <tr>
         <td>E-post</td>
-        <td><input type="text" id="epost"/>
+        <td><input type="text" id="epost" onchange="valideringEpost()"/>
             <span id="feilEpost" style="color: red"></span></td>
     </tr>
     <tr>
         <td>Bord</td>
-        <td><input type="text" id="bord"/>
+        <td><input type="text" id="bord" onchange="valideringBord()"/>
             <span id="feilBord" style="color: red"></span></td>
     </tr>
     <tr>
         <td>Varer</td>
-        <td><input type="text" id="varer"/>
+        <td><input type="text" id="varer" onchange="valideringVarer()"/>
             <span id="feilVarer" style="color: red"></span></td>
     </tr>
     <tr>
-        <td><button>Send bestilling</button></td>
+        <td><button type="button" onclick="sendBestilling()">Send bestilling</button></td>
         <td></td>
     </tr>
 </table>
